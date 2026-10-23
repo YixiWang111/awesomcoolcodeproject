@@ -1,0 +1,7 @@
+source,measure,First half,Second half,change,unit
+synthetic_sample,Mean polarity,0.0646,0.1767,+0.1121,TextBlob polarity (-1 to +1)
+synthetic_sample,Subjectivity,0.4291,0.4536,+0.0244,TextBlob subjectivity (0 to 1)
+synthetic_sample,Words per entry,36.9051,35.7029,-1.2022,words
+synthetic_sample,Sentence length,8.8373,8.5999,-0.2374,words per sentence
+synthetic_sample,Type-token ratio,0.9282,0.9358,+0.0077,unique / total content words
+synthetic_sample,Reading ease,77.2130,71.9260,-5.2870,Flesch reading ease (higher = easier)
