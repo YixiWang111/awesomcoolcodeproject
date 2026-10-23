@@ -1,0 +1,22 @@
+# InkMirror - Writing Analyser
+# Python 3.12
+# Install:  py -3.12 -m venv .venv
+#           .\.venv\Scripts\Activate.ps1
+#           pip install -r requirements.txt
+#           python -c "import nltk; nltk.download('punkt_tab'); nltk.download('stopwords'); nltk.download('cmudict')"
+#
+# The NLTK data download is required, not optional:
+#   punkt_tab   tokenising - the pipeline will not run without it, no fallback
+#   stopwords   frequency counts - falls back to a reduced built-in list
+#   cmudict     syllable counts for the readability stretch goal only
+#
+# It is punkt_tab, not punkt: NLTK 3.9 changed the tokeniser's data layout.
+# textblob.download_corpora is NOT needed - the polarity lexicon ships inside the
+# package, and that command fetches corpora this project never reads.
+#
+# See README section 3 for the offline mirror URLs if nltk.download() fails.
+matplotlib==3.11.2
+nltk==3.10.3
+textblob==0.20.1
+textstat==0.7.13
+wordcloud==1.9.6
